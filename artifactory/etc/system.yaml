@@ -1,0 +1,13 @@
+shared:
+  node:
+    id: artifactory-1
+    ip: 0.0.0.0
+
+  jfrogUrlBase: http://artifactory:8081
+
+frontend:
+  bindHost: 0.0.0.0
+  port: 8070
+
+cluster:
+  enabled: false

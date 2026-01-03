@@ -3,7 +3,7 @@ shared:
     id: artifactory-1
     ip: 0.0.0.0
 
-  jfrogUrlBase: http://artifactory:8081
+  jfrogUrlBase: http://localhost:8082
 
 frontend:
   bindHost: 0.0.0.0

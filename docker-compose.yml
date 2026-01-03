@@ -29,6 +29,7 @@ services:
         - ./data/reports:/srv
         - ./filebrowser/filebrowser.db:/database.db
         - ./filebrowser/settings.json:/config/settings.json
+      command: --noauth
       restart: unless-stopped
       
   artifactory:

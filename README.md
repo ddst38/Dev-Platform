@@ -8,6 +8,7 @@ Infrastructure Docker pour environnement de test CI/CD et migration.
 |---------|------|-------------|
 | **CVS** | 2401 | Serveur CVS pserver |
 | **Reports** | 8085 | Serveur Apache avec upload CGI |
+| **Filebrowser** | 8086 | Interface web moderne pour rapports |
 | **Artifactory** | 8082 | Repository d'artefacts (OSS 7.x) |
 | **Jenkins** | 8081 | Serveur CI/CD (LTS JDK21) |
 
@@ -30,7 +31,8 @@ docker compose ps
 
 - **Artifactory**: http://localhost:8082 (admin / password)
 - **Jenkins**: http://localhost:8081
-- **Reports**: http://localhost:8085
+- **Reports (Apache)**: http://localhost:8085
+- **Filebrowser**: http://localhost:8086 (admin / admin)
 
 ## Upload de rapports
 
@@ -54,6 +56,8 @@ curl -X POST \
 │   ├── Dockerfile
 │   ├── httpd.conf
 │   └── upload.py         # Script CGI upload
+├── filebrowser/          # Config Filebrowser
+│   └── settings.json
 ├── cvs/                  # Config serveur CVS
 │   └── Dockerfile
 └── artifactory/          # Config Artifactory

@@ -4,6 +4,7 @@
 jenkins_home/
 cvsroot/
 data/
+filebrowser/*.db
 
 # ===================
 # Sample/test files

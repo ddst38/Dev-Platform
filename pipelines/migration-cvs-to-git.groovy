@@ -14,11 +14,11 @@ pipeline {
     stages {
         stage('Checkout CVS') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'cvs-credentials', usernameVariable: 'CVS_USER', passwordVariable: 'CVS_PASS')]) {
-                    sh '''
+                withCredentials([usernamePassword(credentialsId: 'cvs-jenkins', usernameVariable: 'CVS_USER', passwordVariable: 'CVS_PASS')]) {
+                    sh '''#!/bin/bash
                         echo "=== Login CVS ==="
                         export CVS_PASSFILE=$(mktemp)
-                        cvs -d :pserver:${CVS_USER}@cvs:/cvsroot login <<< "${CVS_PASS}"
+                        echo "${CVS_PASS}" | cvs -d :pserver:${CVS_USER}@cvs:/cvsroot login
 
                         echo "=== Checkout depuis CVS ==="
                         rm -rf ${PROJECT_NAME} ${PROJECT_NAME}-maven SSA-CHISTO

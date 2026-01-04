@@ -4,51 +4,53 @@ Infrastructure Docker pour tests de migration et CI/CD.
 
 ## Architecture
 
-| Service | Port | Image/Build | Usage |
-|---------|------|-------------|-------|
-| CVS | 2401 | `./cvs` | Serveur CVS pserver |
-| Reports | 8085 | `./apache` | Serveur Apache + upload CGI |
-| Artifactory | 8082 | `artifactory-oss:7.77.5` | Repository d'artefacts |
-| Jenkins | 8081 | `jenkins:lts-jdk21` | CI/CD |
+| Service | Port | Image/Build |
+|---------|------|-------------|
+| CVS | 2401 | `./cvs` |
+| Reports | 8085 | `./apache` |
+| Filebrowser | 8086 | `filebrowser/filebrowser` |
+| Artifactory | 8082 | `artifactory-oss:7.77.5` |
+| Jenkins | 8081 | `./jenkins` |
+| GitLab | 8083 / 2222 | `gitlab/gitlab-ce` |
 
 ## Commandes
 
 ```bash
-# Démarrer tous les services
-docker compose up -d
-
-# Rebuild un service spécifique
-docker compose build reports && docker compose up -d reports
-
-# Logs
-docker compose logs -f <service>
+docker compose up -d          # Démarrer
+docker compose ps             # État
+docker compose logs -f <svc>  # Logs
+docker compose down           # Arrêter (⚠️ pas --volumes)
 ```
+
+## Accès
+
+| Service | URL | Credentials |
+|---------|-----|-------------|
+| Artifactory | http://localhost:8082 | admin/password |
+| Jenkins | http://localhost:8081 | - |
+| GitLab | http://localhost:8083 | root/(voir logs) |
+| Filebrowser | http://localhost:8086 | admin/jsa2uMBrYlm8xJ98 |
+| Reports | http://localhost:8085 | - |
+
+## Pipeline Migration
+
+`pipelines/migration-cvs-to-git.groovy`
+
+1. Checkout CVS → 2. ant2maven → 3. Publish report → 4. Push GitLab
+
+**Credentials Jenkins:**
+- `cvs-jenkins` (Username/Password)
+- `gitlab-token` (Secret text)
 
 ## Structure
 
 ```
-.
-├── apache/          # Serveur reports (Dockerfile, httpd.conf, upload.py)
-├── cvs/             # Serveur CVS
-├── cvsroot/         # Repository CVS (TEST module)
-├── jenkins_home/    # Config Jenkins persistante
-├── artifactory/     # Config Artifactory (system.yaml, keys)
-├── data/reports/    # Volume monté pour les rapports uploadés
-└── report/          # Archive report.tar.gz source
+├── docker-compose.yml
+├── apache/           # Reports server
+├── cvs/              # CVS server
+├── jenkins/          # Jenkins + Docker + CVS
+├── filebrowser/      # Config
+├── artifactory/      # Config
+├── pipelines/        # Jenkinsfiles
+└── jar/              # ant2maven (non versionné)
 ```
-
-## Points d'attention
-
-### Artifactory
-- Port interne: 8082 (Router avec JF_ROUTER_ENABLED=true)
-- Login par défaut: admin/password
-- Startup ~60s
-
-### Apache Reports
-- Upload: `POST /upload` avec `multipart/form-data`
-- Params: `archive` (fichier .tar.gz), `project` (nom)
-- Extraction vers `/var/www/reports/<project>/<timestamp>/`
-
-### Jenkins
-- Setup wizard désactivé
-- Docker socket monté pour builds Docker-in-Docker

@@ -5,6 +5,8 @@ jenkins_home/
 cvsroot/
 data/
 filebrowser/*.db
+cvs-projets/
+jar/
 
 # ===================
 # Sample/test files

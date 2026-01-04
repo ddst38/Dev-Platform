@@ -2,9 +2,9 @@ FROM jenkins/jenkins:lts-jdk21
 
 USER root
 
-# Install Docker CLI
+# Install Docker CLI and CVS
 RUN apt-get update && \
-    apt-get install -y apt-transport-https ca-certificates curl gnupg && \
+    apt-get install -y apt-transport-https ca-certificates curl gnupg cvs git && \
     install -m 0755 -d /etc/apt/keyrings && \
     curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc && \
     chmod a+r /etc/apt/keyrings/docker.asc && \

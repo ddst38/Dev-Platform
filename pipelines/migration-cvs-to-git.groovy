@@ -14,12 +14,19 @@ pipeline {
     stages {
         stage('Checkout CVS') {
             steps {
-                sh '''
-                    echo "=== Checkout depuis CVS ==="
-                    rm -rf ${PROJECT_NAME} ${PROJECT_NAME}-maven
-                    cvs -d ${CVS_ROOT} checkout ${CVS_MODULE}
-                    mv ${CVS_MODULE} ${PROJECT_NAME} || true
-                '''
+                withCredentials([usernamePassword(credentialsId: 'cvs-credentials', usernameVariable: 'CVS_USER', passwordVariable: 'CVS_PASS')]) {
+                    sh '''
+                        echo "=== Login CVS ==="
+                        export CVS_PASSFILE=$(mktemp)
+                        cvs -d :pserver:${CVS_USER}@cvs:/cvsroot login <<< "${CVS_PASS}"
+
+                        echo "=== Checkout depuis CVS ==="
+                        rm -rf ${PROJECT_NAME} ${PROJECT_NAME}-maven SSA-CHISTO
+                        cvs -d :pserver:${CVS_USER}@cvs:/cvsroot checkout ${CVS_MODULE}
+                        mv SSA-CHISTO/R0_J ${PROJECT_NAME} || mv ${CVS_MODULE} ${PROJECT_NAME} || true
+                        rm -rf SSA-CHISTO
+                    '''
+                }
             }
         }
 

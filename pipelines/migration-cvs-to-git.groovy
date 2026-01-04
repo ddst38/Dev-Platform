@@ -43,6 +43,27 @@ pipeline {
             }
         }
 
+        stage('Publish Report') {
+            steps {
+                sh '''#!/bin/bash
+                    echo "=== Publication du rapport ==="
+                    cd ${PROJECT_NAME}-maven
+
+                    if [ -f migration-report.html ]; then
+                        tar czf report.tar.gz migration-report.html
+                        curl -X POST \
+                            -F "archive=@report.tar.gz" \
+                            -F "project=${PROJECT_NAME}" \
+                            http://migration-reports/upload
+
+                        echo "Rapport publié: http://localhost:8085/${PROJECT_NAME}/"
+                    else
+                        echo "Pas de rapport trouvé"
+                    fi
+                '''
+            }
+        }
+
         stage('Push to GitLab') {
             steps {
                 withCredentials([string(credentialsId: "${GITLAB_CREDENTIAL_ID}", variable: 'GITLAB_TOKEN')]) {

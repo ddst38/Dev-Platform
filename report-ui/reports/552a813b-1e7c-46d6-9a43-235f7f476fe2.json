@@ -1,0 +1,1649 @@
+{
+  "id" : "552a813b-1e7c-46d6-9a43-235f7f476fe2",
+  "projectName" : "PRF2_A",
+  "migrationDate" : "2026-01-07T10:54:19.489896",
+  "statistics" : {
+    "totalJars" : 65,
+    "resolved" : 58,
+    "unresolved" : 7,
+    "unresolvedInternal" : 4,
+    "unresolvedExternal" : 3,
+    "providedAutoFix" : 0,
+    "missingCount" : 2,
+    "successRate" : 89.2,
+    "coverageRate" : 97.0,
+    "byScope" : {
+      "COMPILE" : 48,
+      "TEST" : 10,
+      "PROVIDED" : 1
+    },
+    "byMethod" : {
+      "INTERNAL_PATTERN" : 1,
+      "KNOWN_CONFIG" : 58
+    }
+  },
+  "libraries" : [ {
+    "originalName" : "jaxb-impl-2.2.7.jar",
+    "cleanedName" : "jaxb-impl-2.2.7.jar",
+    "groupId" : "com.sun.xml.bind",
+    "artifactId" : "jaxb-impl",
+    "version" : "2.2.7",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 919968,
+    "sha1" : "a29e53347934e694c9551981cecd242fad05022b",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "jaxb-api-2.2.7.jar",
+    "cleanedName" : "jaxb-api-2.2.7.jar",
+    "groupId" : "javax.xml.bind",
+    "artifactId" : "jaxb-api",
+    "version" : "2.2.7",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 100146,
+    "sha1" : "2f51c4bb4724ea408096ee9100ff2827e07e5b7c",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "commons-logging-1.2.jar",
+    "cleanedName" : "commons-logging-1.2.jar",
+    "groupId" : "commons-logging",
+    "artifactId" : "commons-logging",
+    "version" : "1.2",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 61829,
+    "sha1" : "4bfc12adfe4842bf07b657f0369c4cb522955686",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-oxm-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-oxm-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-oxm",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 84094,
+    "sha1" : "a557a238342412a2c8a238dc01fb735565d1d871",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "postgresql-9.2-1004-jdbc4.jar",
+    "cleanedName" : "postgresql-9.2-1004-jdbc4.jar",
+    "groupId" : "org.postgresql",
+    "artifactId" : "postgresql",
+    "version" : "9.2-1004-jdbc4",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 579981,
+    "sha1" : "77e7e7df83aa0e212b788ff43ab697d534389e59",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "slf4j-api-1.7.22.jar",
+    "cleanedName" : "slf4j-api-1.7.22.jar",
+    "groupId" : "org.slf4j",
+    "artifactId" : "slf4j-api",
+    "version" : "1.7.22",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 41077,
+    "sha1" : "a1c83373863cec7ae8d89dc1c5722d8cb6ec0309",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "jk-socle-caster-1.0.0.jar",
+    "cleanedName" : "jk-socle-caster-1.0.0.jar",
+    "groupId" : "fr.cnamts.jk.socle",
+    "artifactId" : "jk-socle-caster",
+    "version" : "SHA-aa47ad0056785aa2e74d52d47c5ff1acc5e4ae7e",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "INTERNAL_PATTERN",
+    "size" : 16376,
+    "sha1" : "aa47ad0056785aa2e74d52d47c5ff1acc5e4ae7e",
+    "status" : "UNRESOLVED",
+    "isInternal" : true,
+    "identificationSource" : null,
+    "libraryType" : "internal",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : true
+  }, {
+    "originalName" : "spring-aop-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-aop-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-aop",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 370067,
+    "sha1" : "858d6c70909b3ce7e07b59fc936f8ccfcd81c0aa",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "aopalliance-1.0.jar",
+    "cleanedName" : "aopalliance-1.0.jar",
+    "groupId" : "aopalliance",
+    "artifactId" : "aopalliance",
+    "version" : "1.0",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 4467,
+    "sha1" : "0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "camel-spring-2.14.1.jar",
+    "cleanedName" : "camel-spring-2.14.1.jar",
+    "groupId" : "org.apache.camel",
+    "artifactId" : "camel-spring",
+    "version" : "2.14.1",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 255868,
+    "sha1" : "a31b38a85147bf1ecd82b0ee3f76435b2e1694e1",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "aspectjrt-1.8.9.jar",
+    "cleanedName" : "aspectjrt-1.8.9.jar",
+    "groupId" : "org.aspectj",
+    "artifactId" : "aspectjrt",
+    "version" : "1.8.9",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 117528,
+    "sha1" : "87372d9e2323313bec24b09a325bfea8ae0eb867",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-test-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-test-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-test",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 562524,
+    "sha1" : "60bd0ac25869d515717284b77644d0416d3a38c5",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "logback-classic-1.1.2.jar",
+    "cleanedName" : "logback-classic-1.1.2.jar",
+    "groupId" : "ch.qos.logback",
+    "artifactId" : "logback-classic",
+    "version" : "1.1.2",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 270750,
+    "sha1" : "b316e9737eea25e9ddd6d88eaeee76878045c6b2",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "FastInfoset-1.2.12.jar",
+    "cleanedName" : "FastInfoset-1.2.12.jar",
+    "groupId" : "com.sun.xml.fastinfoset",
+    "artifactId" : "FastInfoset",
+    "version" : "1.2.12",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 293863,
+    "sha1" : "e8c1c096162a146c2d84135c5036edf54c1b1d38",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "dbunit-2.5.0.jar",
+    "cleanedName" : "dbunit-2.5.0.jar",
+    "groupId" : "org.dbunit",
+    "artifactId" : "dbunit",
+    "version" : "2.5.0",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 561027,
+    "sha1" : "fd9e26e8c2c54770840daf448ce684938becc732",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "guava-20.0.jar",
+    "cleanedName" : "guava-20.0.jar",
+    "groupId" : "com.google.guava",
+    "artifactId" : "guava",
+    "version" : "20.0",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 2442625,
+    "sha1" : "89507701249388e1ed5ddcf8c41f4ce1be7831ef",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "aspectjweaver-1.8.9.jar",
+    "cleanedName" : "aspectjweaver-1.8.9.jar",
+    "groupId" : "org.aspectj",
+    "artifactId" : "aspectjweaver",
+    "version" : "1.8.9",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 1864922,
+    "sha1" : "db28774f477f07220eac18d5ec9c4e01f48589d7",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "com.ibm.jbatch-tck-spi-1.0.jar",
+    "cleanedName" : "com.ibm.jbatch-tck-spi-1.0.jar",
+    "groupId" : "com.ibm.jbatch",
+    "artifactId" : "com.ibm.jbatch-tck-spi",
+    "version" : "1.0",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 3837,
+    "sha1" : "8ac869b0a60bff1a15eba0fb6398942410396938",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "jaxb-core-2.2.7.jar",
+    "cleanedName" : "jaxb-core-2.2.7.jar",
+    "groupId" : "com.sun.xml.bind",
+    "artifactId" : "jaxb-core",
+    "version" : "2.2.7",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 221747,
+    "sha1" : "f327817188a7dce503ae3c667c5931077630b0a1",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "ojdbc6-11.2.0.4.0.jar",
+    "cleanedName" : "ojdbc6-11.2.0.4.0.jar",
+    "groupId" : "com.oracle.database.jdbc",
+    "artifactId" : "ojdbc6",
+    "version" : "11.2.0.4",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 2739670,
+    "sha1" : "a483a046eee2f404d864a6ff5b09dc0e1be3fe6c",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "javax.batch-api-1.0.1.jar",
+    "cleanedName" : "javax.batch-api-1.0.1.jar",
+    "groupId" : "javax.batch",
+    "artifactId" : "javax.batch-api",
+    "version" : "1.0.1",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 34641,
+    "sha1" : "2562072ef44e364529ebf7c48cf44e4568cbd8f5",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-context-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-context-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-context",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 1096773,
+    "sha1" : "a75e18322c7b362fe1daa26a245ae672ec0f3138",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "camel-core-2.14.1.jar",
+    "cleanedName" : "camel-core-2.14.1.jar",
+    "groupId" : "org.apache.camel",
+    "artifactId" : "camel-core",
+    "version" : "2.14.1",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 2798500,
+    "sha1" : "4155a8868a079241d064edffa483efec392e5935",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-batch-core-3.0.6.RELEASE.jar",
+    "cleanedName" : "spring-batch-core-3.0.6.RELEASE.jar",
+    "groupId" : "org.springframework.batch",
+    "artifactId" : "spring-batch-core",
+    "version" : "3.0.6.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 788812,
+    "sha1" : "60aba4ee3e63d32636f296d671f05d7448639fa3",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "commons-compress-1.12.jar",
+    "cleanedName" : "commons-compress-1.12.jar",
+    "groupId" : "org.apache.commons",
+    "artifactId" : "commons-compress",
+    "version" : "1.12",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 442553,
+    "sha1" : "84caa68576e345eb5e7ae61a0e5a9229eb100d7b",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-expression-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-expression-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-expression",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 262988,
+    "sha1" : "a42bdfb833d0be6c18429aea3fb0fba81f85c6e8",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "jcl-over-slf4j-1.7.22.jar",
+    "cleanedName" : "jcl-over-slf4j-1.7.22.jar",
+    "groupId" : "org.slf4j",
+    "artifactId" : "jcl-over-slf4j",
+    "version" : "1.7.22",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 16521,
+    "sha1" : "86ceac14535af5a42c8fb0d06d79b925dd3cb263",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "commons-lang3-3.3.1.jar",
+    "cleanedName" : "commons-lang3-3.3.1.jar",
+    "groupId" : "org.apache.commons",
+    "artifactId" : "commons-lang3",
+    "version" : "3.3.1",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 412693,
+    "sha1" : "6738a2da2202ce360f0af90aba005c1e05a2c4cd",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "commons-io-2.4.jar",
+    "cleanedName" : "commons-io-2.4.jar",
+    "groupId" : "commons-io",
+    "artifactId" : "commons-io",
+    "version" : "2.4",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 185140,
+    "sha1" : "b1b6ea3b7e4aa4f492509a4952029cd8e48019ad",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "log4j-over-slf4j-1.7.22.jar",
+    "cleanedName" : "log4j-over-slf4j-1.7.22.jar",
+    "groupId" : "org.slf4j",
+    "artifactId" : "log4j-over-slf4j",
+    "version" : "1.7.22",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 23647,
+    "sha1" : "a527c37e9ca6c3d19ba298edd4aa344ca751a203",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "hamcrest-all-1.3.jar",
+    "cleanedName" : "hamcrest-all-1.3.jar",
+    "groupId" : "org.hamcrest",
+    "artifactId" : "hamcrest-all",
+    "version" : "1.3",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 306578,
+    "sha1" : "63a21ebc981131004ad02e0434e799fd7f3a8d5a",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "tomcat-juli-7.0.54.jar",
+    "cleanedName" : "tomcat-juli-7.0.54.jar",
+    "groupId" : "org.apache.tomcat",
+    "artifactId" : "tomcat-juli",
+    "version" : "7.0.54",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 38195,
+    "sha1" : "b1ab768678cb729831ed6ae926a90ab6f0974a60",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "xstream-1.4.7.jar",
+    "cleanedName" : "xstream-1.4.7.jar",
+    "groupId" : "com.thoughtworks.xstream",
+    "artifactId" : "xstream",
+    "version" : "1.4.7",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 531571,
+    "sha1" : "bce3282142b63068260f021fcbe48b72e8d71a1a",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-retry-1.1.2.RELEASE.jar",
+    "cleanedName" : "spring-retry-1.1.2.RELEASE.jar",
+    "groupId" : "org.springframework.retry",
+    "artifactId" : "spring-retry",
+    "version" : "1.1.2.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 108319,
+    "sha1" : "949a23beb82ebe31d7a1d47022353b8338c4da11",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-context-support-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-context-support-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-context-support",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 176774,
+    "sha1" : "72db9c52e8bd2dc3290cd51114583731f818356b",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-jdbc-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-jdbc-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-jdbc",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 423659,
+    "sha1" : "205d2f1b902eac16a2ece772dc5ac6090b7e0b6f",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-batch-test-3.0.6.RELEASE.jar",
+    "cleanedName" : "spring-batch-test-3.0.6.RELEASE.jar",
+    "groupId" : "org.springframework.batch",
+    "artifactId" : "spring-batch-test",
+    "version" : "3.0.6.RELEASE",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 36813,
+    "sha1" : "6e632782ae26d5765d76b94d5c317165a6ed4e3d",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "tomcat-jdbc-7.0.54.jar",
+    "cleanedName" : "tomcat-jdbc-7.0.54.jar",
+    "groupId" : "org.apache.tomcat",
+    "artifactId" : "tomcat-jdbc",
+    "version" : "7.0.54",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 125457,
+    "sha1" : "c325fb6d376df8bb34de0252aef2f7472658d4d7",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "joda-time-2.6.jar",
+    "cleanedName" : "joda-time-2.6.jar",
+    "groupId" : "joda-time",
+    "artifactId" : "joda-time",
+    "version" : "2.6",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 587512,
+    "sha1" : "5015880733b0bc0ce813a3ed5601064c1d413671",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "commons-collections-3.2.2.jar",
+    "cleanedName" : "commons-collections-3.2.2.jar",
+    "groupId" : "commons-collections",
+    "artifactId" : "commons-collections",
+    "version" : "3.2.2",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 588337,
+    "sha1" : "8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-test-dbunit-1.3.0.jar",
+    "cleanedName" : "spring-test-dbunit-1.3.0.jar",
+    "groupId" : "com.github.springtestdbunit",
+    "artifactId" : "spring-test-dbunit",
+    "version" : "1.3.0",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 50564,
+    "sha1" : "596cab1e9016443d9ea9ffbc0692f4106f54c37d",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "jsr173_api-1.0.jar",
+    "cleanedName" : "jsr173_api-1.0.jar",
+    "groupId" : "javax.xml.bind",
+    "artifactId" : "jsr173_api",
+    "version" : "1.0",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 49672,
+    "sha1" : "c79b8431c3104315c0aeaed7bf23d0ab0edbaa09",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "jettison-1.2.jar",
+    "cleanedName" : "jettison-1.2.jar",
+    "groupId" : "org.codehaus.jettison",
+    "artifactId" : "jettison",
+    "version" : "1.2",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 72478,
+    "sha1" : "0765a6181653f4b05c18c7a9e8f5c1f8269bf9b2",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "stax-utils-20070216.jar",
+    "cleanedName" : "stax-utils-20070216.jar",
+    "groupId" : "net.java.dev.stax-utils",
+    "artifactId" : "stax-utils",
+    "version" : "20070216",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 128561,
+    "sha1" : "1d9fc60be26a0482c36b7a04d2c581ddf758b6ea",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "xmlpull-1.1.3.1.jar",
+    "cleanedName" : "xmlpull-1.1.3.1.jar",
+    "groupId" : "xmlpull",
+    "artifactId" : "xmlpull",
+    "version" : "1.1.3.1",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 7188,
+    "sha1" : "2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "xpp3_min-1.1.4c.jar",
+    "cleanedName" : "xpp3_min-1.1.4c.jar",
+    "groupId" : "xpp3",
+    "artifactId" : "xpp3_min",
+    "version" : "1.1.4c",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 24956,
+    "sha1" : "19d4e90b43059058f6e056f794f0ea4030d60b86",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "commons-lang-2.6.jar",
+    "cleanedName" : "commons-lang-2.6.jar",
+    "groupId" : "org.netbeans.external",
+    "artifactId" : "org-apache-commons-lang",
+    "version" : "RELEASE113",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 284220,
+    "sha1" : "0ce1edb914c94ebc388f086c6827e8bdeec71ac2",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-batch-infrastructure-3.0.6.RELEASE.jar",
+    "cleanedName" : "spring-batch-infrastructure-3.0.6.RELEASE.jar",
+    "groupId" : "org.springframework.batch",
+    "artifactId" : "spring-batch-infrastructure",
+    "version" : "3.0.6.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 380224,
+    "sha1" : "01c7ca193e0e25118c0f57f0199145c7801164b3",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-core-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-core-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-core",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 1078771,
+    "sha1" : "0251207b29f0f38f61e3495a2f7fb053cf1bfe8c",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "istack-commons-runtime-2.16.jar",
+    "cleanedName" : "istack-commons-runtime-2.16.jar",
+    "groupId" : "com.sun.istack",
+    "artifactId" : "istack-commons-runtime",
+    "version" : "2.16",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 23188,
+    "sha1" : "927eb6fbb003f40d536efd96e7cbcb7ea4c1c2d0",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-beans-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-beans-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-beans",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 731562,
+    "sha1" : "fa992ae40f6fc47117282164e0433b71da385e94",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "spring-tx-4.2.5.RELEASE.jar",
+    "cleanedName" : "spring-tx-4.2.5.RELEASE.jar",
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-tx",
+    "version" : "4.2.5.RELEASE",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 265523,
+    "sha1" : "7395321fe937272d9b781a13985e04ab2dcd6210",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "logback-core-1.1.2.jar",
+    "cleanedName" : "logback-core-1.1.2.jar",
+    "groupId" : "ch.qos.logback",
+    "artifactId" : "logback-core",
+    "version" : "1.1.2",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 427729,
+    "sha1" : "2d23694879c2c12f125dac5076bdfd5d771cc4cb",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "junit-4.11.jar",
+    "cleanedName" : "junit-4.11.jar",
+    "groupId" : "junit",
+    "artifactId" : "junit",
+    "version" : "4.11",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 245039,
+    "sha1" : "4e031bb61df09069aeb2bffb4019e7a5034a4ee0",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "h2-1.3.161.jar",
+    "cleanedName" : "h2-1.3.161.jar",
+    "groupId" : "com.h2database",
+    "artifactId" : "h2",
+    "version" : "1.3.161",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 1259379,
+    "sha1" : "97dc9b6589402749a93b6a7bab0bd45952b4c5b4",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "objenesis-2.1.jar",
+    "cleanedName" : "objenesis-2.1.jar",
+    "groupId" : "org.objenesis",
+    "artifactId" : "objenesis",
+    "version" : "2.1",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 41755,
+    "sha1" : "87c0ea803b69252868d09308b4618f766f135a96",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "mockito-core-1.10.19.jar",
+    "cleanedName" : "mockito-core-1.10.19.jar",
+    "groupId" : "org.mockito",
+    "artifactId" : "mockito-core",
+    "version" : "1.10.19",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 1172979,
+    "sha1" : "e8546f5bef4e061d8dd73895b4e8f40e3fe6effe",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "jacocoant.jar",
+    "cleanedName" : "jacocoant.jar",
+    "groupId" : "org.jacoco",
+    "artifactId" : "org.jacoco.ant",
+    "version" : "0.7.4.201502262128",
+    "scope" : "TEST",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 702408,
+    "sha1" : "a2d0fa0d7846567bd5d3a502effd9b42f3ae81f7",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "wstx-lgpl-3.2.8.jar",
+    "cleanedName" : "wstx-lgpl-3.2.8.jar",
+    "groupId" : "org.codehaus.woodstox",
+    "artifactId" : "wstx-lgpl",
+    "version" : "3.2.8",
+    "scope" : "PROVIDED",
+    "resolutionMethod" : "KNOWN_CONFIG",
+    "size" : 529249,
+    "sha1" : "833a57ee3dc3aa7ac347c8dea98dc38de42e4938",
+    "status" : "RESOLVED",
+    "isInternal" : false,
+    "identificationSource" : "CACHE",
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : false
+  }, {
+    "originalName" : "socle-sk-batch-test-4.3.1.RELEASE.jar",
+    "cleanedName" : "socle-sk-batch-test-4.3.1.RELEASE.jar",
+    "groupId" : "fr.cnamts.jk",
+    "artifactId" : "socle-sk-batch-test-4.3.1.RELEASE",
+    "version" : "SHA-2dfc3857b2c6599acfadbd01a81d801934a32b86",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "UNRESOLVED",
+    "size" : 50103,
+    "sha1" : "2dfc3857b2c6599acfadbd01a81d801934a32b86",
+    "status" : "UNRESOLVED",
+    "isInternal" : true,
+    "identificationSource" : null,
+    "libraryType" : "internal",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : true
+  }, {
+    "originalName" : "socle-sk-batch-core-4.3.1.RELEASE.jar",
+    "cleanedName" : "socle-sk-batch-core-4.3.1.RELEASE.jar",
+    "groupId" : "fr.cnamts.jk",
+    "artifactId" : "socle-sk-batch-core-4.3.1.RELEASE",
+    "version" : "SHA-d716e79cdbb7b905e63c44e547667c4c2d21bb22",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "UNRESOLVED",
+    "size" : 37782,
+    "sha1" : "d716e79cdbb7b905e63c44e547667c4c2d21bb22",
+    "status" : "UNRESOLVED",
+    "isInternal" : true,
+    "identificationSource" : null,
+    "libraryType" : "internal",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : true
+  }, {
+    "originalName" : "ehcache-2.7.1.jar",
+    "cleanedName" : "ehcache-2.7.1.jar",
+    "groupId" : "net.sf.ehcache",
+    "artifactId" : "ehcache-2.7.1",
+    "version" : "SHA-a11c2ef13095fa559f280444a4c06053fc81b0f1",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "UNRESOLVED",
+    "size" : 5435019,
+    "sha1" : "a11c2ef13095fa559f280444a4c06053fc81b0f1",
+    "status" : "UNRESOLVED",
+    "isInternal" : false,
+    "identificationSource" : null,
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : true
+  }, {
+    "originalName" : "socle-sk-batch-spring-4.3.1.RELEASE.jar",
+    "cleanedName" : "socle-sk-batch-spring-4.3.1.RELEASE.jar",
+    "groupId" : "fr.cnamts.jk",
+    "artifactId" : "socle-sk-batch-spring-4.3.1.RELEASE",
+    "version" : "SHA-dcfe1e9db490b63037a1b48f2e15ecd6cd4dafcf",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "UNRESOLVED",
+    "size" : 75395,
+    "sha1" : "dcfe1e9db490b63037a1b48f2e15ecd6cd4dafcf",
+    "status" : "UNRESOLVED",
+    "isInternal" : true,
+    "identificationSource" : null,
+    "libraryType" : "internal",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : true
+  }, {
+    "originalName" : "jms-1.1.jar",
+    "cleanedName" : "jms-1.1.jar",
+    "groupId" : "javax.jms",
+    "artifactId" : "jms-1.1",
+    "version" : "SHA-7976625a7dfe254b50f721f5279e6fbe534d0835",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "UNRESOLVED",
+    "size" : 25417,
+    "sha1" : "7976625a7dfe254b50f721f5279e6fbe534d0835",
+    "status" : "UNRESOLVED",
+    "isInternal" : false,
+    "identificationSource" : null,
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : true
+  }, {
+    "originalName" : "socle-sk-batch-springockito-annotations-4.3.1.RELEASE.jar",
+    "cleanedName" : "socle-sk-batch-springockito-annotations-4.3.1.RELEASE.jar",
+    "groupId" : "org.kubek2k.springockito",
+    "artifactId" : "socle-sk-batch-springockito-annotations-4.3.1.RELEASE",
+    "version" : "SHA-fbb16460ae7c4bf45143e87034e1a74140351240",
+    "scope" : "COMPILE",
+    "resolutionMethod" : "UNRESOLVED",
+    "size" : 45962,
+    "sha1" : "fbb16460ae7c4bf45143e87034e1a74140351240",
+    "status" : "UNRESOLVED",
+    "isInternal" : false,
+    "identificationSource" : null,
+    "libraryType" : "external",
+    "isAutoFixProvided" : false,
+    "isLocalInstall" : true
+  } ],
+  "detectedJars" : [ {
+    "name" : "jaxb-impl-2.2.7.jar",
+    "size" : 919968,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "jaxb-api-2.2.7.jar",
+    "size" : 100146,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "commons-logging-1.2.jar",
+    "size" : 61829,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-oxm-4.2.5.RELEASE.jar",
+    "size" : 84094,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "postgresql-9.2-1004-jdbc4.jar",
+    "size" : 579981,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "slf4j-api-1.7.22.jar",
+    "size" : 41077,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "jk-socle-caster-1.0.0.jar",
+    "size" : 16376,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-aop-4.2.5.RELEASE.jar",
+    "size" : 370067,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "aopalliance-1.0.jar",
+    "size" : 4467,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "camel-spring-2.14.1.jar",
+    "size" : 255868,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "aspectjrt-1.8.9.jar",
+    "size" : 117528,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-test-4.2.5.RELEASE.jar",
+    "size" : 562524,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "logback-classic-1.1.2.jar",
+    "size" : 270750,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "FastInfoset-1.2.12.jar",
+    "size" : 293863,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "dbunit-2.5.0.jar",
+    "size" : 561027,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "guava-20.0.jar",
+    "size" : 2442625,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "aspectjweaver-1.8.9.jar",
+    "size" : 1864922,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "com.ibm.jbatch-tck-spi-1.0.jar",
+    "size" : 3837,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "jaxb-core-2.2.7.jar",
+    "size" : 221747,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "ojdbc6-11.2.0.4.0.jar",
+    "size" : 2739670,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "socle-sk-batch-test-4.3.1.RELEASE.jar",
+    "size" : 50103,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "javax.batch-api-1.0.1.jar",
+    "size" : 34641,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-context-4.2.5.RELEASE.jar",
+    "size" : 1096773,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "camel-core-2.14.1.jar",
+    "size" : 2798500,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-batch-core-3.0.6.RELEASE.jar",
+    "size" : 788812,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "commons-compress-1.12.jar",
+    "size" : 442553,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-expression-4.2.5.RELEASE.jar",
+    "size" : 262988,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "jcl-over-slf4j-1.7.22.jar",
+    "size" : 16521,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "commons-lang3-3.3.1.jar",
+    "size" : 412693,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "commons-io-2.4.jar",
+    "size" : 185140,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "log4j-over-slf4j-1.7.22.jar",
+    "size" : 23647,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "hamcrest-all-1.3.jar",
+    "size" : 306578,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "tomcat-juli-7.0.54.jar",
+    "size" : 38195,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "xstream-1.4.7.jar",
+    "size" : 531571,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-retry-1.1.2.RELEASE.jar",
+    "size" : 108319,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-context-support-4.2.5.RELEASE.jar",
+    "size" : 176774,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-jdbc-4.2.5.RELEASE.jar",
+    "size" : 423659,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-batch-test-3.0.6.RELEASE.jar",
+    "size" : 36813,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "tomcat-jdbc-7.0.54.jar",
+    "size" : 125457,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "socle-sk-batch-core-4.3.1.RELEASE.jar",
+    "size" : 37782,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "joda-time-2.6.jar",
+    "size" : 587512,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "commons-collections-3.2.2.jar",
+    "size" : 588337,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-test-dbunit-1.3.0.jar",
+    "size" : 50564,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "jsr173_api-1.0.jar",
+    "size" : 49672,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "jettison-1.2.jar",
+    "size" : 72478,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "stax-utils-20070216.jar",
+    "size" : 128561,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "ehcache-2.7.1.jar",
+    "size" : 5435019,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "xmlpull-1.1.3.1.jar",
+    "size" : 7188,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "xpp3_min-1.1.4c.jar",
+    "size" : 24956,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "commons-lang-2.6.jar",
+    "size" : 284220,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "socle-sk-batch-spring-4.3.1.RELEASE.jar",
+    "size" : 75395,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "jms-1.1.jar",
+    "size" : 25417,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-batch-infrastructure-3.0.6.RELEASE.jar",
+    "size" : 380224,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-core-4.2.5.RELEASE.jar",
+    "size" : 1078771,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "istack-commons-runtime-2.16.jar",
+    "size" : 23188,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-beans-4.2.5.RELEASE.jar",
+    "size" : 731562,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "spring-tx-4.2.5.RELEASE.jar",
+    "size" : 265523,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "logback-core-1.1.2.jar",
+    "size" : 427729,
+    "source" : "Répertoire lib",
+    "category" : "MAIN"
+  }, {
+    "name" : "socle-sk-batch-springockito-annotations-4.3.1.RELEASE.jar",
+    "size" : 45962,
+    "source" : "Répertoire lib",
+    "category" : "TEST"
+  }, {
+    "name" : "junit-4.11.jar",
+    "size" : 245039,
+    "source" : "Répertoire lib",
+    "category" : "TEST"
+  }, {
+    "name" : "h2-1.3.161.jar",
+    "size" : 1259379,
+    "source" : "Répertoire lib",
+    "category" : "TEST"
+  }, {
+    "name" : "objenesis-2.1.jar",
+    "size" : 41755,
+    "source" : "Répertoire lib",
+    "category" : "TEST"
+  }, {
+    "name" : "mockito-core-1.10.19.jar",
+    "size" : 1172979,
+    "source" : "Répertoire lib",
+    "category" : "TEST"
+  }, {
+    "name" : "jacocoant.jar",
+    "size" : 702408,
+    "source" : "Répertoire lib",
+    "category" : "TEST"
+  }, {
+    "name" : "wstx-lgpl-3.2.8.jar",
+    "size" : 529249,
+    "source" : "Répertoire lib",
+    "category" : "PROVIDED"
+  } ],
+  "missingPackages" : [ {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusTempWriter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/backroutingsepa/item/reader/BackReader.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusTempWriter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/backroutingsepa/item/reader/BackReader.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ForthRoutingParameterDAO",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.item.reader",
+    "packageName" : "fr.cnamts.prf1.batch.common.item.reader",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/backroutingsepa/item/reader/BackReader.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "BackRoutingParameterDAO",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ContractPayloadFile",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackMetadata.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.parameters.bo",
+    "packageName" : "fr.cnamts.prf1.batch.common.parameters.bo",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/processor/BackToBusProcessor.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ApplicationRefParameterDAO",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackToBus.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/processor/BackToBusProcessor.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.item.filter",
+    "packageName" : "fr.cnamts.prf1.batch.common.item.filter",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackFilter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusFxotWriter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.utils",
+    "packageName" : "fr.cnamts.prf1.batch.common.utils",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackFilter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/listener/FileErrorListener.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.utils",
+    "packageName" : "fr.cnamts.prf1.batch.common.utils",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusTempWriter.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "BackRoutingParameterBO",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.forthrouting.contract",
+    "packageName" : "fr.cnamts.prf1.batch.forthrouting.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/listener/FileErrorListener.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "BusContract",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "DirectoryCentricItem",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.parameters.dao",
+    "packageName" : "fr.cnamts.prf1.batch.common.parameters.dao",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackPrefixFilterBuilder.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.parameters.dao",
+    "packageName" : "fr.cnamts.prf1.batch.common.parameters.dao",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/processor/BackToBusProcessor.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/backroutingpvv/item/processor/BackPvvProcessor.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "packageName" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackToBus.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.item",
+    "packageName" : "fr.cnamts.prf1.batch.common.item",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusFxotWriter.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ItemFilter",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.item",
+    "packageName" : "fr.cnamts.prf1.batch.common.item",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusTempWriter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "packageName" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusTempWriter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/backroutingsepa/item/processor/BackSepaProcessor.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/listener/WritingBusErrorListener.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.utils",
+    "packageName" : "fr.cnamts.prf1.batch.common.utils",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusFxotWriter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/backroutingsepa/item/processor/BackSepaProcessor.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackFilter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.parameters.dao",
+    "packageName" : "fr.cnamts.prf1.batch.common.parameters.dao",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackFilter.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ApplicationRefParameterBO",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.item.filter",
+    "packageName" : "fr.cnamts.prf1.batch.common.item.filter",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackFilterable.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.parameters.bo",
+    "packageName" : "fr.cnamts.prf1.batch.common.parameters.bo",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackPrefixFilterBuilder.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ContractToContracts",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "packageName" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/processor/BackToBusProcessor.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.contract",
+    "packageName" : "fr.cnamts.prf1.batch.common.contract",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/backroutingpvv/item/processor/BackPvvProcessor.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ReaderDelegated",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.item",
+    "packageName" : "fr.cnamts.prf1.batch.common.item",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/listener/FileErrorListener.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.utils",
+    "packageName" : "fr.cnamts.prf1.batch.common.utils",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/processor/BackToBusProcessor.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "BusContractBuilder",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.parameters.bo",
+    "packageName" : "fr.cnamts.prf1.batch.common.parameters.bo",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/filter/BackFilter.java"
+  }, {
+    "type" : "CLASS",
+    "name" : "ForthRoutingParameterBO",
+    "packageName" : "",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/contract/back/BackContract.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "packageName" : "fr.cnamts.prf1.batch.forthroutingbus.contract.bus",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/writer/BackToBusFxotWriter.java"
+  }, {
+    "type" : "PACKAGE",
+    "name" : "fr.cnamts.prf1.batch.common.exception",
+    "packageName" : "fr.cnamts.prf1.batch.common.exception",
+    "sourceFile" : "/Users/gregoryhuot/Dev/Projets/CodeAI/projetcvs/PRF2_A-maven3/prf2-app/src/main/java/fr/cnamts/prf2/batch/common/item/processor/BackToBusProcessor.java"
+  } ],
+  "compilationSuccess" : false
+}

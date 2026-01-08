@@ -6,6 +6,9 @@ RUN apt-get update && \
         openbsd-inetd \
         openssh-client \
     && rm -rf /var/lib/apt/lists/*
+
+# Declarer l'utilisateur dans le system
+RUN useradd -m -s /bin/bash jenkins
 # Déclarer le service CVS pour inetd
 RUN echo "cvspserver 2401/tcp" >> /etc/services
 ENV CVSROOT=/cvsroot

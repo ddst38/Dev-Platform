@@ -20,6 +20,17 @@ services:
         - ./data/reports:/var/www/reports
       restart: unless-stopped
 
+  report-ui:
+      build: ./report-ui
+      container_name: migration-reports-ui
+      environment:
+        REPORT-UI_STORAGE-DIR: /app/data/reports
+      ports:
+        - "8090:8090"
+      volumes:
+        - ./report-ui/reports:/app/data/reports
+      restart: unless-stopped
+
   filebrowser:
       image: filebrowser/filebrowser:latest
       container_name: filebrowser

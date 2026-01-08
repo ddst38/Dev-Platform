@@ -1,0 +1,22 @@
+{
+  "id" : "3e8c71a4-2108-45e3-b130-0bc701f91abf",
+  "projectName" : "PRF1_A",
+  "migrationDate" : "2026-01-08T10:52:04.336833801",
+  "statistics" : {
+    "totalJars" : 0,
+    "resolved" : 0,
+    "unresolved" : 0,
+    "unresolvedInternal" : 0,
+    "unresolvedExternal" : 0,
+    "providedAutoFix" : 0,
+    "missingCount" : 0,
+    "successRate" : 0.0,
+    "coverageRate" : 100.0,
+    "byScope" : { },
+    "byMethod" : { }
+  },
+  "libraries" : [ ],
+  "detectedJars" : [ ],
+  "missingPackages" : [ ],
+  "compilationSuccess" : true
+}

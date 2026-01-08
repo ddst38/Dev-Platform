@@ -31,3 +31,4 @@ artifactory/etc/security/
 # Claude context (local)
 # ===================
 .claude/
+report-ui/*.jar

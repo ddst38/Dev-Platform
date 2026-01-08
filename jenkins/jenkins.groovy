@@ -116,12 +116,17 @@ pipeline {
                         AUTO_FIX_FLAG="--auto-fix"
                     fi
 
+                    REPORTUI_FLAG=""
+                    if [ "${PUBLISH_REPORT}" = "true" ]; then
+                        REPORTUI_FLAG="--report-ui-url ${URL_REPORTUI}"
+                    fi
+
                     java -jar ${ANT2MAVEN_JAR} \
                         -p ${PROJECT_NAME} \
                         -o ${PROJECT_NAME}-maven \
                         --lib-provided /opt/tools/lib-provided \
                         ${AUTO_FIX_FLAG} \
-                        --report-ui-url ${URL_REPORTUI} \
+                        ${REPORTUI_FLAG} \
                         -v
 
                     echo "✔ Migration terminée"
@@ -129,35 +134,6 @@ pipeline {
             }
         }
 
-        /*************************************************************
-         * PUBLICATION DU RAPPORT
-         *************************************************************/
-        stage('Publish Report') {
-            when {
-                expression { params.PUBLISH_REPORT }
-            }
-            steps {
-                sh '''#!/bin/bash
-                    set -e
-
-                    echo "=== PUBLICATION RAPPORT ==="
-                    cd ${PROJECT_NAME}-maven
-
-                    if [ -f migration-report.html ]; then
-                        tar czf report.tar.gz migration-report.html
-
-                        curl -X POST \
-                            -F "archive=@report.tar.gz" \
-                            -F "project=${PROJECT_NAME}" \
-                            ${REPORT_UI_UPLOAD}
-
-                        echo "✔ Rapport publié"
-                    else
-                        echo "⚠ Aucun rapport trouvé"
-                    fi
-                '''
-            }
-        }
 
         /*************************************************************
          * CRÉATION DU PROJET GITLAB

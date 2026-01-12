@@ -1,0 +1,49 @@
+FROM debian:bookworm-slim
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        cvs \
+        openbsd-inetd \
+        openssh-client \
+    && rm -rf /var/lib/apt/lists/*
+
+# Declarer l'utilisateur dans le system
+RUN useradd -m -s /bin/bash jenkins
+# Déclarer le service CVS pour inetd
+RUN echo "cvspserver 2401/tcp" >> /etc/services
+ENV CVSROOT=/cvsroot
+
+# Configuration CVS pserver pour inetd
+RUN echo "cvspserver stream tcp nowait root /usr/bin/cvs cvs -f --allow-root=/cvsroot pserver" \
+    > /etc/inetd.conf
+
+EXPOSE 2401
+
+CMD sh -c "\
+  if [ ! -d /cvsroot/CVSROOT ]; then \
+    cvs -d /cvsroot init; \
+  fi && \
+  if ! grep -q '*.jar' /cvsroot/CVSROOT/cvswrappers 2>/dev/null; then \
+    cd /tmp && \
+    cvs -d /cvsroot checkout CVSROOT && \
+    cd CVSROOT && \
+    echo '# Traiter les fichiers binaires correctement' >> cvswrappers && \
+    echo \"*.jar -k 'b'\" >> cvswrappers && \
+    echo \"*.war -k 'b'\" >> cvswrappers && \
+    echo \"*.ear -k 'b'\" >> cvswrappers && \
+    echo \"*.zip -k 'b'\" >> cvswrappers && \
+    echo \"*.tar -k 'b'\" >> cvswrappers && \
+    echo \"*.gz -k 'b'\" >> cvswrappers && \
+    echo \"*.class -k 'b'\" >> cvswrappers && \
+    echo \"*.png -k 'b'\" >> cvswrappers && \
+    echo \"*.jpg -k 'b'\" >> cvswrappers && \
+    echo \"*.gif -k 'b'\" >> cvswrappers && \
+    echo \"*.pdf -k 'b'\" >> cvswrappers && \
+    echo \"*.exe -k 'b'\" >> cvswrappers && \
+    echo \"*.dll -k 'b'\" >> cvswrappers && \
+    echo \"*.so -k 'b'\" >> cvswrappers && \
+    cvs commit -m 'Configure binary wrappers for jar/war/ear/zip/class files' && \
+    cd / && rm -rf /tmp/CVSROOT && \
+    echo 'cvswrappers committed successfully'; \
+  fi && \
+  inetd -d"

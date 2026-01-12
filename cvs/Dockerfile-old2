@@ -1,0 +1,44 @@
+FROM debian:bookworm-slim
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        cvs \
+        openbsd-inetd \
+        openssh-client \
+    && rm -rf /var/lib/apt/lists/*
+
+# Declarer l'utilisateur dans le system
+RUN useradd -m -s /bin/bash jenkins
+# Déclarer le service CVS pour inetd
+RUN echo "cvspserver 2401/tcp" >> /etc/services
+ENV CVSROOT=/cvsroot
+
+# Configuration CVS pserver pour inetd
+RUN echo "cvspserver stream tcp nowait root /usr/bin/cvs cvs -f --allow-root=/cvsroot pserver" \
+    > /etc/inetd.conf
+
+EXPOSE 2401
+
+CMD sh -c "\
+  if [ ! -d /cvsroot/CVSROOT ]; then \
+    cvs -d /cvsroot init; \
+  fi && \
+  if ! grep -q '*.jar' /cvsroot/CVSROOT/cvswrappers 2>/dev/null; then \
+    echo '# Traiter les fichiers binaires correctement' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.jar -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.war -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.ear -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.zip -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.tar -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.gz -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.class -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.png -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.jpg -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.gif -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.pdf -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.exe -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.dll -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo '*.so -k b' >> /cvsroot/CVSROOT/cvswrappers; \
+    echo 'cvswrappers configured for binary files'; \
+  fi && \
+  inetd -d"

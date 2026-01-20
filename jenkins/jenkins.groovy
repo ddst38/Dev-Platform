@@ -42,12 +42,83 @@ pipeline {
             defaultValue: true,
             description: 'Publier le rapport de migration vers ReportUI'
         )
-
+        string(
+            name: 'NEXUS_URL',
+            defaultValue: 'http://localhost:8084',
+            description: 'Url du serveur Nexus (Dev Artifcatory)'
+        )
+        string(
+            name: 'NEXUS_USER',
+            defaultValue: 'jenkins',
+            description: 'Utilisateur Nexus'
+        )
+        string(
+            name: 'NEXUS_PASSWORD',
+            defaultValue: 'jenkins',
+            description: 'Password Nexus'
+        )
+        string(
+            name: 'ARTIFACTORY_URL',
+            defaultValue: 'http://localhost:8084',
+            description: 'Url du serveur Artifactory'
+        )
+        string(
+            name: 'ARTIFACTORY_USER',
+            defaultValue: 'jenkins',
+            description: 'Utilisateur Artifactory'
+        )
+        string(
+            name: 'ARTIFACTORY_PASSWORD',
+            defaultValue: 'jenkins',
+            description: 'Password Artifactory'
+        )
+        booleanParam(
+            name: 'DEPLOY_REMOTE',
+            defaultValue: false,
+            description: 'Publication des librairies Non-résolus dans le repository actif'
+        )
+        string(
+            name: 'REMOTE_TARGET',
+            defaultValue: 'NEXUS',
+            description: 'type de repository'
+        )
+        string(
+            name: 'DEPLOY_REPO',
+            defaultValue: 'migration-java-dette',
+            description: 'Repository DETTE sécurisé'
+        )
+        string(
+            name: 'PATH_CACHE',
+            defaultValue: './conf-Ant2maven/known-artifacts.yaml',
+            description: 'Systeme de cache de localisation des librairies'
+        )
         booleanParam(
             name: 'PUSH_GITLAB',
             defaultValue: true,
             description: 'Créer le dépôt GitLab et pousser le projet'
         )
+        booleanParam(
+            name: 'CVE_CHECK',
+            defaultValue: false,
+            description: 'Active analyse CVE sur le projet'
+        )
+        string(
+            name: 'NVD_API_KEY',
+            defaultValue: '6c435e77-a150-4417-977e-5780ff394102',
+            description: 'API Key pour acces base NVD / nécessaire pour analyse CVE'
+        )
+    
+        booleanParam(
+            name: 'SCAN_CADRE',
+            defaultValue: true,
+            description: 'Recuperation des DEPENDANCES_FAB'
+        )
+        booleanParam(
+            name: 'VERBOSE',
+            defaultValue: false,
+            description: 'Mode debug'
+        )
+
     }
 
     /*****************************************************************
@@ -121,13 +192,94 @@ pipeline {
                         REPORTUI_FLAG="--report-ui-url ${URL_REPORTUI}"
                     fi
 
+                    NEXUSURL_FLAG=""
+                    if [ "${REMOTE_TARGET}" = "NEXUS" ]; then
+                        NEXUSURL_FLAG="--nexus-url ${NEXUS_URL}"
+                    fi
+
+                    NEXUSUSER_FLAG=""
+                    if [ "${REMOTE_TARGET}" = "NEXUS" ]; then
+                        NEXUSUSER_FLAG="--nexus-user ${NEXUS_USER}"
+                    fi
+
+                    NEXUSPASS_FLAG=""
+                    if [ "${REMOTE_TARGET}" = "NEXUS" ]; then
+                        NEXUSPASS_FLAG="--nexus-password ${NEXUS_PASSWORD}"
+                    fi
+
+                    ARTIFACTORYURL_FLAG=""
+                    if [ "${REMOTE_TARGET}" = "ARTIFACTORY" ]; then
+                        ARTIFACTORYURL_FLAG="--artifactory-url ${ARTIFACTORY_URL}"
+                    fi
+
+                    ARTIFACTORYUSER_FLAG=""
+                    if [ "${REMOTE_TARGET}" = "ARTIFACTORY" ]; then
+                        ARTIFACTORYUSER_FLAG="--artifactory-user ${ARTIFACTORY_USER}"
+                    fi
+
+                    ARTIFACTORYPASS_FLAG=""
+                    if [ "${REMOTE_TARGET}" = "ARTIFACTORY" ]; then
+                        ARTIFACTORYPASS_FLAG="--artifactory-password ${ARTIFACTORY_PASSWORD}"
+                    fi
+
+                    DEPLOYREMOTE_FLAG=""
+                    if [ "${DEPLOY_REMOTE}" = "true" ]; then
+                        DEPLOYREMOTE_FLAG="--deploy-mode REMOTE"
+                    fi
+
+                    REMOTETARGET_FLAG=""
+                    if [ "${DEPLOY_REMOTE}" = "true" ]; then
+                        REMOTETARGET_FLAG="--remote-target ${REMOTE_TARGET}"
+                    fi
+
+                    DEPLOYREPO_FLAG=""
+                    if [ "${DEPLOY_REMOTE}" = "true" ]; then
+                        DEPLOYREPO_FLAG="--deploy-repo ${DEPLOY_REPO}"
+                    fi
+
+                    PATHCACHE_FLAG=""
+                    if [ "${PATH_CACHE}" != "" ]; then
+                        PATHCACHE_FLAG="--known-artifacts ${PATH_CACHE}"
+                    fi
+                    
+                    CVECHECK_FLAG=""
+                    if [ "${CVE_CHECK}" = "true" ]; then
+                        CVECHECK_FLAG="--cve-check"
+                    fi
+
+                    NVDAPIKEY_FLAG=""
+                    if [ "${CVE_CHECK}" = "true" ]; then
+                        NVDAPIKEY_FLAG="--nvd-api-key ${NVD_API_KEY}"
+                    fi
+
+                    SCANCADRE_FLAG=""
+                    if [ "${SCAN_CADRE}" = "true" ]; then
+                        SCANCADRE_FLAG="--scan-cadre"
+                    fi
+
+                    VERRBOSE_FLAG=""
+                    if [ "${VERBOSE}" = "true" ]; then
+                        VERRBOSE_FLAG="-v"
+                    fi
+                    
                     java -jar ${ANT2MAVEN_JAR} \
                         -p ${PROJECT_NAME} \
                         -o ${PROJECT_NAME}-maven \
                         --lib-provided /opt/tools/lib-provided \
                         ${AUTO_FIX_FLAG} \
                         ${REPORTUI_FLAG} \
-                        -v
+                        ${NEXUSURL_FLAG} \
+                        ${NEXUSUSER_FLAG} \
+                        ${NEXUSPASS_FLAG} \
+                        ${ARTIFACTORYURL_FLAG} \
+                        ${ARTIFACTORYUSER_FLAG} \
+                        ${ARTIFACTORYPASS_FLAG} \
+                        ${DEPLOYREMOTE_FLAG} \
+                        ${REMOTETARGET_FLAG} \
+                        ${PATHCACHE_FLAG} \
+                        ${CVECHECK_FLAG} \
+                        ${SCANCADRE_FLAG} \
+                        ${VERRBOSE_FLAG}
 
                     echo "✔ Migration terminée"
                 '''
@@ -269,9 +421,9 @@ EOF
     /*****************************************************************
      * POST ACTIONS
      *****************************************************************/
-    post {
+    /**post {
         always {
             cleanWs()
         }
-    }
+    }*/
 }
